@@ -1,0 +1,18 @@
+{
+    "name": "luxer-server",
+    "version": "1.0.0",
+    "description": "backend for luxer app",
+    "main": "./dist/app",
+    "scripts": {
+      "start": "node ./dist/app",
+      "postinstall": "tsc"
+    },
+    "engines": {
+      "node": "9.2.x"
+    },
+    "dependencies": {
+      "express": "^4.16.2",
+      "typescript": "^2.6.1"
+    }
+}
+  
