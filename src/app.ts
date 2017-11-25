@@ -9,23 +9,16 @@ import * as express from 'express';
 const app = express();
 
 /**
- * Express configuration.
- */
-app.set('port', process.env.PORT || 3000);
-
-/**
- * Primary app routes.
+ * Primary app route.
  */
 app.get('/', (req, res) => {
-    res.send('Luxer Server Up');
+    res.send('App is running.');
 });
 
 /**
  * Start Express server.
  */
-app.listen(app.get('port'), () => {
-    console.log(('  App is running at http://localhost:%d in %s mode'), app.get('port'), app.get('env'));
-    console.log('  Press CTRL-C to stop\n');
-});
+app.listen(3000, () => {
+    console.log(('  App is running at http://localhost:3000'));
 
-module.exports = app;
+});

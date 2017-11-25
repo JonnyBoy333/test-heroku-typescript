@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "watch": false,
         "module": "commonjs",
         "target": "es6",
         "noImplicitAny": true,
@@ -18,7 +17,6 @@
             ]
         }
     },
-    "compileOnSave": true,
     "exclude": [
         "node_modules"
     ],
